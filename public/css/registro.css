@@ -1,0 +1,139 @@
+/* Estilos de fondo y layout */
+body {
+    
+    background-image: url("../../public/images/fondo.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Efectos para el formulario */
+form {
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 50px rgba(0, 0, 0, 0.3);
+}
+
+/* Animación del ícono del usuario */
+.c-user i {
+    animation: icon-bounce 2s infinite;
+}
+
+@keyframes icon-bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Resaltado de texto del título */
+.text-highlight {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ff6f91;
+    animation: text-glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes text-glow {
+    0% {
+        text-shadow: 0 0 10px #ff6f91, 0 0 20px #ff6f91, 0 0 30px #ff6f91;
+    }
+    100% {
+        text-shadow: 0 0 20px #ffd1dc, 0 0 30px #ffd1dc, 0 0 40px #ffd1dc;
+    }
+}
+
+/* Input con ícono y mejor contraste */
+.input-group-text {
+    background-color: #ff6f91;
+    color: white;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* Campos de formulario mejorados */
+.form-control {
+    border-radius: 8px;
+    border: 2px solid #ff6f91;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.form-control:focus {
+    border-color: #ff6f91;
+    box-shadow: 0 0 8px rgba(255, 111, 145, 0.5);
+}
+
+/* Color del título h2 de la página de registro */
+h2 {
+    color: #468499; /* Azul suave que encaja con el tema general */
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Cambios en los iconos (i tag) */
+i {
+    color:#468499;; /* Misma paleta que el título */
+    font-size: 2rem;
+}
+
+/* Botón más sencillo y amigable al diseño */
+.btn {
+    background-color: #25b0de; /* Color más amigable, tono aqua */
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #218db2; /* Tono más claro al pasar el mouse */
+    transform: translateY(-3px); /* Efecto sutil al hacer hover */
+}
+
+/* Eliminando el resplandor intenso del botón */
+.c-button {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más sutil */
+    animation: none; /* Sin animación de brillo */
+}
+
+
+@keyframes button-glow {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 111, 145, 0.7), 0 0 20px rgba(255, 111, 145, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(255, 111, 145, 1), 0 0 30px rgba(255, 111, 145, 1);
+    }
+}
+
+/* Estilos de texto */
+.text-white {
+    color: #2e4c5f;
+}
+
+.text-primary {
+    color: #468499;
+}
+
+.text-primary:hover {
+    color: #2e4c5f;
+}

@@ -1,0 +1,104 @@
+/* Estilos generales para el fondo */
+body {
+
+    background-image: url("../../public/images/fondo.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Estilos del formulario */
+form {
+    background-color: rgba(255, 255, 255, 0.217);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 50px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos del ícono en el título */
+.c-user i {
+    color: #ffffff;
+    animation: icon-bounce 2s infinite;
+}
+
+@keyframes icon-bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+.text-highlight {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+
+.input-group-text {
+    background-color: #5e0ba7;
+    color: white;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.form-control {
+    border-radius: 8px;
+    border: 2px solid #914699;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.form-control:focus {
+    border-color: #5e0ba7;
+    box-shadow: 0 0 8px rgba(70, 132, 153, 0.5);
+}
+
+.btn {
+    background-color: #5e0ba7;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #1f7592; 
+    transform: translateY(-3px);
+
+}
+.c-button {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    animation: none; 
+}
+
+
+.text-white {
+    color: #2e4c5f;
+}
+
+.text-primary {
+    color: #468499;
+    font-weight: bold;
+}
+
+.text-primary:hover {
+    color: #2e4c5f;
+}
